@@ -1,8 +1,30 @@
-.navigation-bar{
-    padding: 30px auto !important; 
+.navigation-bar {
+  padding: 40px 0 30px 0 !important;
 }
-li{
-    list-style: none;
-    display: inline;
-    padding: 10px 20px;
+
+ul {
+  margin: 0 !important;
+}
+li {
+  list-style: none;
+  display: inline;
+  font-family: var(--poppins-font);
+  cursor: pointer;
+}
+/* header links */
+
+.header-links > li {
+  padding: 5px 35px;
+}
+
+/* header icons */
+.header-icons > li {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+/* the horizontal line */
+.horizontal-line {
+  height: 1.5px !important;
+  color: grey;
 }
