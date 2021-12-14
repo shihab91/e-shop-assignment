@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <Container>
         <Row xs={1} md={3} className="navigation-bar">
-          <Col className="w-fit-content">
+          <Col className="w-fit-content ">
             <img src={logo} alt="the logo" width="80px" className="logo" />
           </Col>
           <Col className="my-auto p-0">
