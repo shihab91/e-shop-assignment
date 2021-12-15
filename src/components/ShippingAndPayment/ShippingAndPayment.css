@@ -14,12 +14,12 @@
   background-color: #77ca7b;
   border: 2px solid #77ca7b;
 }
-.sign-up-button {
+.sign-up-and-out-button{
   background-color: #ffffff;
   border: 2px solid rgb(211, 211, 211);
   color: black;
 }
-.sign-up-button:hover {
+.sign-up-and-out-button:hover {
   background-color: #77ca7b;
   color: white;
   border-color: #77ca7b;

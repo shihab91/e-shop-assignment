@@ -1,10 +1,18 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router";
+import useAuth from "../../hooks/useAuth";
 import "./Login.css";
 const Login = () => {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { user, error, signInUser } = useAuth();
+  const navigate = useNavigate();
+  const onSubmit = (data) => {
+    const { email, password } = data;
+    console.log(email, password);
+    signInUser(email, password);
+  };
   return (
     <Container className=" mt-5 d-flex justify-content-center align-items-center flex-column ">
       <h4>Log in</h4>
@@ -25,6 +33,16 @@ const Login = () => {
           Log in
         </button>
       </form>
+      <p
+        className="text-decoration-underline mt-3"
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          navigate("/signup");
+        }}
+      >
+        New User? Sign up
+      </p>
+      {error && <p className="text-danger mt-4">{error}</p>}
     </Container>
   );
 };

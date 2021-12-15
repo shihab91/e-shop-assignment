@@ -6,20 +6,38 @@ import ShippingInfo from "../ShippingInfo/ShippingInfo";
 import { Link } from "react-router-dom";
 import "./ShippingAndPayment.css";
 import Footer from "../Footer/Footer";
-
+import useAuth from "../../hooks/useAuth";
 const ShippingAndPayment = () => {
+  const { user, signOutUser } = useAuth();
+  console.log(user);
+  const handleSignOut = () => {
+    signOutUser();
+  };
   return (
     <Container className="payment-shipping-container">
       <Row>
         <Col md={5}>
           <h6>Shipping and Payment</h6>
           <div className="mt-5 mb-4">
-            <Link to="/login">
-              <button className="button log-in-button">LOGIN</button>
-            </Link>
-            <Link to="/signup">
-              <button className="button sign-up-button">SIGN UP</button>
-            </Link>
+            {user.email ? (
+              <button
+                className="button sign-up-and-out-button"
+                onClick={handleSignOut}
+              >
+                Sign Out
+              </button>
+            ) : (
+              <div>
+                <Link to="/login">
+                  <button className="button log-in-button">LOGIN</button>
+                </Link>
+                <Link to="/signup">
+                  <button className="button sign-up-and-out-button">
+                    SIGN UP
+                  </button>
+                </Link>
+              </div>
+            )}
           </div>
           {/* shopping information. the input fields */}
           <ShippingInfo />
