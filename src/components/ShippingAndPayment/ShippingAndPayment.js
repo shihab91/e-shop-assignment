@@ -5,6 +5,7 @@ import PaymentAndDeliveryMethods from "../PaymentAndDeliveryMethods/PaymentAndDe
 import ShippingInfo from "../ShippingInfo/ShippingInfo";
 import { Link } from "react-router-dom";
 import "./ShippingAndPayment.css";
+import Footer from "../Footer/Footer";
 
 const ShippingAndPayment = () => {
   return (
@@ -32,6 +33,8 @@ const ShippingAndPayment = () => {
           <MyCart />
         </Col>
       </Row>
+      {/* the footer */}
+      <Footer />
     </Container>
   );
 };
