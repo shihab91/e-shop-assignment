@@ -14,11 +14,14 @@ const ShippingAndPayment = () => {
             <button className="button log-in-button">LOGIN</button>
             <button className="button sign-up-button">SIGN UP</button>
           </div>
+          {/* shopping information. the input fields */}
           <ShippingInfo />
         </Col>
+        {/* payment and delivery methods component */}
         <Col>
           <PaymentAndDeliveryMethods />
         </Col>
+        {/* the cart component */}
         <Col>
           <MyCart />
         </Col>
