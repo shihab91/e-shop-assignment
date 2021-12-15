@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "../../assets/images/eshop2.png";
 import { BsCart2, BsPerson, BsSearch } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
   return (
@@ -9,7 +10,9 @@ const Navbar = () => {
       <Container>
         <Row xs={1} md={3} className="navigation-bar">
           <Col className="w-fit-content ">
-            <img src={logo} alt="the logo" width="80px" className="logo" />
+            <Link to="/">
+              <img src={logo} alt="the logo" width="80px" className="logo" />
+            </Link>
           </Col>
           <Col className="my-auto p-0">
             <ul className="header-links">
