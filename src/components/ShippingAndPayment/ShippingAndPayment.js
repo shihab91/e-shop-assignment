@@ -6,9 +6,9 @@ import ShippingInfo from "../ShippingInfo/ShippingInfo";
 import "./ShippingAndPayment.css";
 const ShippingAndPayment = () => {
   return (
-    <Container className="my-5">
+    <Container className="payment-shipping-container">
       <Row>
-        <Col md={6}>
+        <Col md={5}>
           <h6>Shipping and Payment</h6>
           <div className="mt-5 mb-4">
             <button className="button log-in-button">LOGIN</button>
@@ -17,10 +17,10 @@ const ShippingAndPayment = () => {
           <ShippingInfo />
         </Col>
         <Col>
-          <MyCart />
+          <PaymentMethods />
         </Col>
         <Col>
-          <PaymentMethods />
+          <MyCart />
         </Col>
       </Row>
     </Container>

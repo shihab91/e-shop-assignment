@@ -5,7 +5,7 @@ const ShippingInfo = () => {
   return (
     <Container className="p-0 mt-5">
       <h6>Shipping Information</h6>
-      <form action="" className="my-4">
+      <form action="" className="my-4 shipping-form">
         <input type="email" placeholder="Email" />
         <input type="text" placeholder="Address" />
         <input type="text" placeholder="First name" />
@@ -14,7 +14,7 @@ const ShippingInfo = () => {
         <input type="number" placeholder="Postal Code/ZIP" />
         <input type="number" placeholder="Phone Number" />
         <select name="country" id="" placeholder="Country">
-          <option value="" disabled selected>
+          <option disabled selected>
             Country
           </option>
           <option value="">India</option>

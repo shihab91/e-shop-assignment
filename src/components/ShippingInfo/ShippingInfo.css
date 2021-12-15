@@ -6,10 +6,10 @@ input,
 select {
   padding: 8px 15px;
   border-radius: 35px;
-  margin-top: 15px !important;
+  margin-top: 18px !important;
   margin-right: 15px !important;
   width: 45%;
-  border: 2px solid rgb(211, 211, 211);
+  border: 2px solid var(--grey-color);
   outline: none;
 }
 input:hover,
@@ -19,4 +19,15 @@ select:hover,
 select:active,
 select:focus {
   border: 2px solid #77ca7b;
+}
+.shipping-form > select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  background-image: url(https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-down-arrows-those-icons-fill-those-icons-7.png);
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+  background-size: 11px;
+  margin-right: 25px !important;
 }
