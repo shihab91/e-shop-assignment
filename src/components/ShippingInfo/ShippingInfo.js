@@ -14,7 +14,7 @@ const ShippingInfo = () => {
         <input type="number" placeholder="Postal Code/ZIP" />
         <input type="number" placeholder="Phone Number" />
         <select name="country" id="">
-          <option disabled selected>
+          <option value="" disabled selected>
             Country
           </option>
           <option value="">India</option>

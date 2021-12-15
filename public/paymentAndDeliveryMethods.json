@@ -25,18 +25,22 @@
   },
   {
     "methodName": "delivery",
-    "image": "https://i.ibb.co/YX1GzPr/inpost.png"
+    "image": "https://i.ibb.co/YX1GzPr/inpost.png",
+    "cost": "20"
   },
   {
     "methodName": "delivery",
-    "image": "https://i.ibb.co/Hzv8vkc/DHL.png"
+    "image": "https://i.ibb.co/Hzv8vkc/DHL.png",
+    "cost": "12"
   },
   {
     "methodName": "delivery",
-    "image": "https://i.ibb.co/jDCTqYL/dpd.jpg"
+    "image": "https://i.ibb.co/jDCTqYL/dpd.jpg",
+    "cost": "15"
   },
   {
     "methodName": "delivery",
-    "image": "https://i.ibb.co/m69gnFQ/dedex.jpg"
+    "image": "https://i.ibb.co/m69gnFQ/dedex.jpg",
+    "cost": "10"
   }
 ]
