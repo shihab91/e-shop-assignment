@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import MyCart from "../MyCart/MyCart";
-import PaymentMethods from "../PaymentMethods/PaymentMethods";
+import PaymentAndDeliveryMethods from "../PaymentAndDeliveryMethods/PaymentAndDeliveryMethods";
 import ShippingInfo from "../ShippingInfo/ShippingInfo";
 import "./ShippingAndPayment.css";
 const ShippingAndPayment = () => {
@@ -17,7 +17,7 @@ const ShippingAndPayment = () => {
           <ShippingInfo />
         </Col>
         <Col>
-          <PaymentMethods />
+          <PaymentAndDeliveryMethods />
         </Col>
         <Col>
           <MyCart />

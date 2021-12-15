@@ -1,0 +1,26 @@
+[
+  {
+    "methodName": "paypal",
+    "image": "https://i.ibb.co/kyyQg8x/paypal.png"
+  },
+  {
+    "methodName": "visa",
+    "image": "https://i.ibb.co/fNFysmx/visa-PNG5.png"
+  },
+  {
+    "methodName": "mastercard",
+    "image": "https://i.ibb.co/7zXqS44/1280px-Master-Card-Logo-svg.png"
+  },
+  {
+    "methodName": "mastero",
+    "image": "https://i.ibb.co/p2DyH4C/mastero.png"
+  },
+  {
+    "methodName": "discover",
+    "image": "https://i.ibb.co/2hp9f5C/discover.png"
+  },
+  {
+    "methodName": "idesl",
+    "image": "https://i.ibb.co/LR4JV1W/download.png"
+  }
+]

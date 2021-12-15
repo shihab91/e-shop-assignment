@@ -13,7 +13,7 @@ const ShippingInfo = () => {
         <input type="text" placeholder="last name" />
         <input type="number" placeholder="Postal Code/ZIP" />
         <input type="number" placeholder="Phone Number" />
-        <select name="country" id="" placeholder="Country">
+        <select name="country" id="">
           <option disabled selected>
             Country
           </option>
