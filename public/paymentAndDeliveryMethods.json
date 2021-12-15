@@ -1,26 +1,42 @@
 [
   {
-    "methodName": "paypal",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/kyyQg8x/paypal.png"
   },
   {
-    "methodName": "visa",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/fNFysmx/visa-PNG5.png"
   },
   {
-    "methodName": "mastercard",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/7zXqS44/1280px-Master-Card-Logo-svg.png"
   },
   {
-    "methodName": "mastero",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/p2DyH4C/mastero.png"
   },
   {
-    "methodName": "discover",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/2hp9f5C/discover.png"
   },
   {
-    "methodName": "idesl",
+    "methodName": "payment getway",
     "image": "https://i.ibb.co/LR4JV1W/download.png"
+  },
+  {
+    "methodName": "delivery",
+    "image": "https://i.ibb.co/YX1GzPr/inpost.png"
+  },
+  {
+    "methodName": "delivery",
+    "image": "https://i.ibb.co/Hzv8vkc/DHL.png"
+  },
+  {
+    "methodName": "delivery",
+    "image": "https://i.ibb.co/jDCTqYL/dpd.jpg"
+  },
+  {
+    "methodName": "delivery",
+    "image": "https://i.ibb.co/m69gnFQ/dedex.jpg"
   }
 ]
