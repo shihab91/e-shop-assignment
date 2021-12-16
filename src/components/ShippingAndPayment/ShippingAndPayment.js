@@ -17,7 +17,9 @@ const ShippingAndPayment = () => {
     <Container className="payment-shipping-container">
       <Row>
         <Col md={5}>
-          <h6>Shipping and Payment</h6>
+          <h5 className="fw-bold" style={{ color: "#77ca7b" }}>
+            Shipping and Payment
+          </h5>
           <div className="mt-5 mb-4">
             {user.email ? (
               <button

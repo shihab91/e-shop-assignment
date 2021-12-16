@@ -1,13 +1,18 @@
 .footer {
   margin-top: 80px;
 }
-.back-icon{
-    cursor: pointer;
+.back-icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.back-icon:hover {
+  color: #77ca7b;
+  margin-left: 5px;
 }
 .footer-buttons button {
   outline: none;
   background: none;
-  border: 2px solid #000;
+  border: 2px solid var(--grey-color);
   color: #000;
 }
 .footer-buttons button:hover {

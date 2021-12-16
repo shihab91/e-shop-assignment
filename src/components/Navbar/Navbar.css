@@ -12,11 +12,14 @@ li {
   cursor: pointer;
 }
 /* header links */
-
 .header-links > li {
   padding: 5px 35px;
+  transition: 0.3s;
 }
 
+.header-links > li:hover{
+  color:#77ca7b;
+}
 /* header icons */
 .header-icons > li {
   font-size: 20px;
