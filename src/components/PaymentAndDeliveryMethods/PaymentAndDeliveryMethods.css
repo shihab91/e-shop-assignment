@@ -17,7 +17,7 @@
 .payment-methods img:hover {
   border: 2px solid #77ca7b;
 }
-.single-delivery-method{
+.single-delivery-method {
   width: 150px;
   border: 2px solid var(--grey-color);
   border-radius: 25px;
@@ -28,7 +28,7 @@
 .delivery-methods img {
   width: 70%;
   height: 60px !important;
-  padding: 5px 15px;
+  padding: 5px 15px 5px 5px;
 }
 .single-delivery-method:hover {
   border: 2px solid #77ca7b;

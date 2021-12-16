@@ -14,7 +14,7 @@ const Navbar = () => {
         <Row className="navigation-bar">
           <Col>
             <Link to="/">
-              <img src={logo} alt="the logo" width="80px" className="logo" />
+              <img src={logo} alt="the logo" width="180px" className="logo" />
             </Link>
           </Col>
           <Col className="my-auto p-0">
