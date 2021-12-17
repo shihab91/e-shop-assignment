@@ -5,7 +5,7 @@ import PaymentAndDeliveryMethods from "../PaymentAndDeliveryMethods/PaymentAndDe
 import ShippingInfo from "../ShippingInfo/ShippingInfo";
 import { Link } from "react-router-dom";
 import "./ShippingAndPayment.css";
-import Footer from "../Footer/Footer";
+import PaymentFooter from "../PaymentFooter/PaymentFooter";
 import useAuth from "../../hooks/useAuth";
 const ShippingAndPayment = () => {
   const { user, signOutUser } = useAuth();
@@ -54,7 +54,7 @@ const ShippingAndPayment = () => {
         </Col>
       </Row>
       {/* the footer */}
-      <Footer />
+      <PaymentFooter />
     </Container>
   );
 };
