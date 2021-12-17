@@ -3,6 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import logo from "../../assets/images/eshop2.png";
 import { BsCart2, BsPerson, BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { BadgeOverlay } from "react-rainbow-components";
+
 import "./Navbar.css";
 import useAuth from "../../hooks/useAuth";
 const Navbar = () => {
@@ -26,7 +28,9 @@ const Navbar = () => {
           <Col className="my-auto" xs={5}>
             <ul className="header-icons float-md-end">
               <li>
-                <BsCart2 />
+                <BadgeOverlay className="rainbow-m-around_medium" value={5}>
+                  <BsCart2 />
+                </BadgeOverlay>
               </li>
               <li>
                 {user?.email && user.displayName}

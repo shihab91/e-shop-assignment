@@ -5,9 +5,11 @@
 ul {
   margin: 0 !important;
 }
+.header-links li,.header-icons li{
+  display: inline;
+}
 li {
   list-style: none;
-  display: inline;
   font-family: var(--poppins-font);
   cursor: pointer;
 }
@@ -17,8 +19,8 @@ li {
   transition: 0.3s;
 }
 
-.header-links > li:hover{
-  color:var(--green-color);
+.header-links > li:hover {
+  color: var(--green-color);
 }
 /* header icons */
 .header-icons > li {

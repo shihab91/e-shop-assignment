@@ -1,0 +1,11 @@
+.footer-links li{
+    color: var(--green-color);
+    font-size: 18px;    
+    padding: 8px 0 8px 0;
+}
+.footer-icons svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--green-color);
+    margin-left: 15px;
+}
