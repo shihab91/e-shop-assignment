@@ -10,7 +10,7 @@ const MenTShirt = () => {
   }, []);
   return (
     <>
-      <div className="t-shirt-bg">
+      <div className="t-shirt-bg" id="menTShirt">
         <h1>
           NEW <br /> TEES
         </h1>

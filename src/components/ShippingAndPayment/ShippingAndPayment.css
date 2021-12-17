@@ -14,13 +14,13 @@
   background: none;
 }
 .button:hover{
-  background: #77ca7b;
+  background: var(--green-color);
   color: #fff;
-  border-color: #77ca7b;
+  border-color: var(--green-color);
 }
 .log-in-button {
-  background-color: #77ca7b;
-  border: 2px solid #77ca7b;
+  background-color: var(--green-color);
+  border: 2px solid var(--green-color);
 }
 .sign-up-and-out-button{
   background-color: #ffffff;
@@ -28,7 +28,7 @@
   color: black;
 }
 .sign-up-and-out-button:hover {
-  background-color: #77ca7b;
+  background-color: var(--green-color);
   color: white;
-  border-color: #77ca7b;
+  border-color: var(--green-color);
 }

@@ -19,7 +19,9 @@ const HomeBanner = () => {
             For top-tier industry leaders, data is often in good shape, but it’s
             not all held in the same place
           </p>
-          <button className="button mt-4">Start shopping</button>
+          <a href="#menTShirt">
+            <button className="button mt-4">Start shopping</button>
+          </a>
         </div>
         <div>
           <img

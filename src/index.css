@@ -9,11 +9,13 @@
 :root{
 --poppins-font:'Poppins', sans-serif;
 --grey-color: #e5e5e5;
+--green-color: #77ca7b;
 }
 body {
   font-family: var(--poppins-font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {

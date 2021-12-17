@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { ZoomableImage } from "react-rainbow-components";
 import "./Product.css";
 const Product = ({ products }) => {
   return (
@@ -10,7 +11,7 @@ const Product = ({ products }) => {
             key={product._id}
             className="product d-flex flex-column justify-content-center align-items-center my-5"
           >
-            <img src={product.productImage} alt="" />
+            <ZoomableImage src={product.productImage} alt="" />
             <p className="my-3">${product.productPrice}</p>
             <button className="button m-0">Add To Cart</button>
           </Col>

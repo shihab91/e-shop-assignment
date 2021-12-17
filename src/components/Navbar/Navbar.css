@@ -18,7 +18,7 @@ li {
 }
 
 .header-links > li:hover{
-  color:#77ca7b;
+  color:var(--green-color);
 }
 /* header icons */
 .header-icons > li {

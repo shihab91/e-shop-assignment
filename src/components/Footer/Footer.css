@@ -6,7 +6,7 @@
   transition: 0.3s;
 }
 .back-icon:hover {
-  color: #77ca7b;
+  color: var(--green-color);
   margin-left: 5px;
 }
 .footer-buttons button {
@@ -16,7 +16,7 @@
   color: #000;
 }
 .footer-buttons button:hover {
-  background: #77ca7b;
+  background: var(--green-color);
   color: #fff;
-  border: 2px solid #77ca7b;
+  border: 2px solid var(--green-color);
 }

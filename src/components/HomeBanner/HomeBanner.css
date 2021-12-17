@@ -1,6 +1,6 @@
 .home-banner-text h1 {
   font-size: 60px;
-  color: #77ca7b;
+  color: var(--green-color);
 }
 .home-banner-img {
   width: 70%;

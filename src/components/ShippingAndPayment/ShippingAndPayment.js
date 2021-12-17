@@ -17,7 +17,7 @@ const ShippingAndPayment = () => {
     <Container className="payment-shipping-container">
       <Row>
         <Col md={5}>
-          <h5 className="fw-bold" style={{ color: "#77ca7b" }}>
+          <h5 className="fw-bold" style={{ color: "var(--green-color)" }}>
             Shipping and Payment
           </h5>
           <div className="mt-5 mb-4">

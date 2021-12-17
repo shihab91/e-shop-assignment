@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <Container>
         <Row className="navigation-bar">
-          <Col>
+          <Col xs={2}>
             <Link to="/">
               <img src={logo} alt="the logo" width="180px" className="logo" />
             </Link>
@@ -23,7 +23,7 @@ const Navbar = () => {
               <li>Kids</li>
             </ul>
           </Col>
-          <Col className="my-auto" xs={4}>
+          <Col className="my-auto" xs={5}>
             <ul className="header-icons float-md-end">
               <li>
                 <BsCart2 />
