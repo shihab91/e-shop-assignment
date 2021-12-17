@@ -9,6 +9,14 @@
   margin-right: 25px;
   cursor: pointer;
   transition: 0.3s;
+  border: 2px solid var(--grey-color);
+  color: #000;
+  background: none;
+}
+.button:hover{
+  background: #77ca7b;
+  color: #fff;
+  border-color: #77ca7b;
 }
 .log-in-button {
   background-color: #77ca7b;

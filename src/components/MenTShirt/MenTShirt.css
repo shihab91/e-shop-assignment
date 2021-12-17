@@ -1,0 +1,18 @@
+.t-shirt-bg{
+    background-image: url(https://i.ibb.co/9N8n6BM/tshirtbg.jpg);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-shirt-bg h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+.product img{
+width: 80%;    
+border-radius: 25px;
+}

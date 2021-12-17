@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 import "./Login.css";
 const Login = () => {
   const { register, handleSubmit } = useForm();
-  const { user, error, signInUser } = useAuth();
+  const { error, signInUser } = useAuth();
   const navigate = useNavigate();
   const onSubmit = (data) => {
     const { email, password } = data;

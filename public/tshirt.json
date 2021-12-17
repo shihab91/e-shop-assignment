@@ -1,0 +1,32 @@
+[
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/QbvsWQC/t-shirt1.jpg"
+  },
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/0q6t7gH/t-shirt2.jpg"
+  },
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/10jvv2s/t-shirt3.jpg"
+  },
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/KV79T1g/t-shirt4.jpg"
+  },
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/QmZmzG4/t-shirt5.jpg"
+  },
+  {
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/GMq5vCv/t-shirt6.jpg"
+  }
+]

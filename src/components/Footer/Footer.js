@@ -19,7 +19,7 @@ const Footer = () => {
   };
   return (
     <div className="footer d-flex flex-row justify-content-between align-items-center">
-      <div className="back-icon">
+      <div className="back-icon" onClick={() => window.history.back()}>
         <AiOutlineArrowLeft size={20} />
         <span className="ms-2 fs-5">Back</span>
       </div>
