@@ -9,6 +9,8 @@ import Home from "./components/Home/Home";
 import ProductDetail from "./components/productDetail/ProductDetail";
 import PrivateRoute from "./sharedComponents/Product/PrivateRoute/PrivateRoute";
 import MakeAdmin from "./components/MakeAdmin/MakeAdmin";
+import AddProduct from "./components/AddProduct/AddProduct";
+import ManageProducts from "./components/ManageProducts/ManageProducts";
 
 function App() {
   return (
@@ -30,7 +32,30 @@ function App() {
           <Route path="/productDetail/:id" element={<ProductDetail />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/makeadmin" element={<MakeAdmin />}></Route>
+          <Route
+            path="/makeadmin"
+            element={
+              <PrivateRoute>
+                <MakeAdmin />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route
+            path="/addproduct"
+            element={
+              <PrivateRoute>
+                <AddProduct />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route
+            path="/manageproducts"
+            element={
+              <PrivateRoute>
+                <ManageProducts />
+              </PrivateRoute>
+            }
+          ></Route>
         </Routes>
       </AuthProvider>
     </div>

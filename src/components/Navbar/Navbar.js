@@ -11,6 +11,7 @@ import useCart from "../../hooks/useCart";
 const Navbar = () => {
   const navigate = useNavigate();
   const { user, signOutUser, admin } = useAuth();
+  console.log(user);
   const [cartProducts] = useCart();
   return (
     <>
@@ -33,9 +34,17 @@ const Navbar = () => {
                   </a>
                 </>
               ) : (
-                <Link to="/makeadmin">
-                  <li>Make Admin</li>
-                </Link>
+                <>
+                  <Link to="/makeadmin">
+                    <li>Make Admin</li>
+                  </Link>
+                  <Link to="/addproduct">
+                    <li>Add Product</li>
+                  </Link>
+                  <Link to="/manageproducts">
+                    <li>Manage Products</li>
+                  </Link>
+                </>
               )}
               {user?.email ? (
                 <button
@@ -53,7 +62,7 @@ const Navbar = () => {
               )}
             </ul>
           </Col>
-          <Col className="my-auto" xs={4}>
+          <Col className="my-auto" xs={3}>
             <ul className="header-icons float-md-end">
               <li
                 onClick={() => {

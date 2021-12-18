@@ -21,7 +21,7 @@ select:active,
 select:focus {
   border: 2px solid var(--green-color);
 }
-.shipping-form > select {
+select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
