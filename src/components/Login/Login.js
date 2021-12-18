@@ -10,7 +10,6 @@ const Login = () => {
   const navigate = useNavigate();
   const onSubmit = (data) => {
     const { email, password } = data;
-    console.log(email, password);
     signInUser(email, password);
   };
   return (
@@ -22,12 +21,18 @@ const Login = () => {
         className=" d-flex flex-column"
       >
         <label for="email">Email</label>
-        <input type="email" placeholder="Email" {...register("email")} />
+        <input
+          type="email"
+          placeholder="Email"
+          {...register("email")}
+          required
+        />
         <label for="password">Password</label>
         <input
           type="password"
           placeholder="Password"
           {...register("password")}
+          required
         />
         <button type="submit" className="submit-button">
           Log in

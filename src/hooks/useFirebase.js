@@ -14,6 +14,7 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [admin, setAdmin] = useState(false);
   const navigate = useNavigate();
   const auth = getAuth();
   //   create a user with email and password
@@ -93,6 +94,13 @@ const useFirebase = () => {
         console.log(data);
       });
   };
-  return { user, error, isLoading, createUser, signInUser, signOutUser };
+  useEffect(() => {
+    fetch(`http://localhost:5000/users/${user.email}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setAdmin(data.admin);
+      });
+  }, [user]);
+  return { user, error, isLoading, admin, createUser, signInUser, signOutUser };
 };
 export default useFirebase;

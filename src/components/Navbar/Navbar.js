@@ -10,7 +10,7 @@ import useAuth from "../../hooks/useAuth";
 import useCart from "../../hooks/useCart";
 const Navbar = () => {
   const navigate = useNavigate();
-  const { user, signOutUser } = useAuth();
+  const { user, signOutUser, admin } = useAuth();
   const [cartProducts] = useCart();
   return (
     <>
@@ -23,15 +23,20 @@ const Navbar = () => {
           </Col>
           <Col className="my-auto p-0">
             <ul className="header-links">
-              <a href="#menTShirts">
-                <li>T-Shirts</li>
-              </a>
-              <a href="#shirts">
-                <li>Shirts</li>
-              </a>
-              <Link to="/makeadmin">
-                <li>Make Admin</li>
-              </Link>
+              {!admin ? (
+                <>
+                  <a href="#menTShirts">
+                    <li>T-Shirts</li>
+                  </a>
+                  <a href="#shirts">
+                    <li>Shirts</li>
+                  </a>
+                </>
+              ) : (
+                <Link to="/makeadmin">
+                  <li>Make Admin</li>
+                </Link>
+              )}
               {user?.email ? (
                 <button
                   className="button sign-up-and-out-button"

@@ -21,14 +21,20 @@ const Signup = () => {
         className=" d-flex flex-column"
       >
         <label for="name">Name</label>
-        <input type="text" placeholder="Name" {...register("name")} />
+        <input type="text" placeholder="Name" {...register("name")} required />
         <label for="email">Email</label>
-        <input type="email" placeholder="Email" {...register("email")} />
+        <input
+          type="email"
+          placeholder="Email"
+          {...register("email")}
+          required
+        />
         <label for="password">Password</label>
         <input
           type="password"
           placeholder="Password"
           {...register("password")}
+          required
         />
         <button type="submit" className="submit-button">
           Sign up
