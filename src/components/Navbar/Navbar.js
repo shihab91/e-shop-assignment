@@ -1,14 +1,17 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "../../assets/images/eshop2.png";
-import { BsCart2, BsPerson, BsSearch } from "react-icons/bs";
+import { BsCart2, BsPerson } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { BadgeOverlay } from "react-rainbow-components";
-
+import { useNavigate } from "react-router";
 import "./Navbar.css";
 import useAuth from "../../hooks/useAuth";
+import useCart from "../../hooks/useCart";
 const Navbar = () => {
-  const { user } = useAuth();
+  const navigate = useNavigate();
+  const { user, signOutUser } = useAuth();
+  const [cartProducts] = useCart();
   return (
     <>
       <Container>
@@ -20,24 +23,48 @@ const Navbar = () => {
           </Col>
           <Col className="my-auto p-0">
             <ul className="header-links">
-              <li>Men</li>
-              <li>Women</li>
-              <li>Kids</li>
+              <a href="#menTShirts">
+                <li>T-Shirts</li>
+              </a>
+              <a href="#shirts">
+                <li>Shirts</li>
+              </a>
+              <Link to="/makeadmin">
+                <li>Make Admin</li>
+              </Link>
+              {user?.email ? (
+                <button
+                  className="button sign-up-and-out-button"
+                  onClick={() => {
+                    signOutUser();
+                  }}
+                >
+                  Sign Out
+                </button>
+              ) : (
+                <Link to="/login">
+                  <button className="button log-in-button">LOGIN</button>
+                </Link>
+              )}
             </ul>
           </Col>
-          <Col className="my-auto" xs={5}>
+          <Col className="my-auto" xs={4}>
             <ul className="header-icons float-md-end">
-              <li>
-                <BadgeOverlay className="rainbow-m-around_medium" value={5}>
+              <li
+                onClick={() => {
+                  navigate("/myorders");
+                }}
+              >
+                <BadgeOverlay
+                  className="rainbow-m-around_medium"
+                  value={cartProducts.length}
+                >
                   <BsCart2 />
                 </BadgeOverlay>
               </li>
               <li>
                 {user?.email && user.displayName}
                 <BsPerson className="ms-3" />
-              </li>
-              <li>
-                <BsSearch />
               </li>
             </ul>
           </Col>

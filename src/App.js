@@ -6,6 +6,9 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import AuthProvider from "./contexts/AuthProvider";
 import Home from "./components/Home/Home";
+import ProductDetail from "./components/productDetail/ProductDetail";
+import PrivateRoute from "./sharedComponents/Product/PrivateRoute/PrivateRoute";
+import MakeAdmin from "./components/MakeAdmin/MakeAdmin";
 
 function App() {
   return (
@@ -15,10 +18,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/payment" element={<ShippingAndPayment />}></Route>
-          <Route path="/home" element={<ShippingAndPayment />}></Route>
+          {/* <Route path="/home" element={<ShippingAndPayment />}></Route> */}
+          <Route
+            path="/myorders"
+            element={
+              <PrivateRoute>
+                <ShippingAndPayment />
+              </PrivateRoute>
+            }
+          ></Route>
+          <Route path="/productDetail/:id" element={<ProductDetail />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/makeadmin" element={<MakeAdmin />}></Route>
         </Routes>
       </AuthProvider>
     </div>

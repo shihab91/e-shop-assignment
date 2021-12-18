@@ -9,7 +9,6 @@ import PaymentFooter from "../PaymentFooter/PaymentFooter";
 import useAuth from "../../hooks/useAuth";
 const ShippingAndPayment = () => {
   const { user, signOutUser } = useAuth();
-  console.log(user);
   const handleSignOut = () => {
     signOutUser();
   };

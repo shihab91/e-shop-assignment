@@ -13,14 +13,16 @@ initializeAuthentication();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   const auth = getAuth();
   //   create a user with email and password
   const createUser = (email, password, name) => {
-    console.log(email, password, name);
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
+        saveUserToDB(email, name);
         updateProfile(auth.currentUser, {
           displayName: name,
         })
@@ -34,11 +36,15 @@ const useFirebase = () => {
       })
       .catch((error) => {
         setError(error.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
   //   sign in with email and password
   const signInUser = (email, password) => {
+    setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
@@ -47,6 +53,9 @@ const useFirebase = () => {
       })
       .catch((error) => {
         setError(error.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
   //  sign out a user
@@ -67,8 +76,23 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
   }, [auth]);
-  return { user, error, createUser, signInUser, signOutUser };
+  const saveUserToDB = (email, displayName) => {
+    const user = { email, displayName };
+    fetch("http://localhost:5000/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  };
+  return { user, error, isLoading, createUser, signInUser, signOutUser };
 };
 export default useFirebase;

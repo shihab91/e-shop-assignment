@@ -1,0 +1,74 @@
+[
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/QbvsWQC/t-shirt1.jpg"
+  },
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/0q6t7gH/t-shirt2.jpg"
+  },
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/10jvv2s/t-shirt3.jpg"
+  },
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/KV79T1g/t-shirt4.jpg"
+  },
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/QmZmzG4/t-shirt5.jpg"
+  },
+  {
+    "category": "tshirt",
+    "productName": "standard T-shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/GMq5vCv/t-shirt6.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/wCxZBhg/shirt4.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/h72TWsY/shirt6.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/wpqbQBw/shirt5.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/YRzxLzR/shirt3.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/0GYYywb/shirt2.jpg"
+  },
+  {
+    "category": "shirt",
+    "productName": "standard shirt",
+    "productPrice": 15.99,
+    "productImage": "https://i.ibb.co/Vpvdtx6/shirt1.jpg"
+  }
+]
